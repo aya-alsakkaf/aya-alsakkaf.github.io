@@ -1,0 +1,197 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+.btn {
+  background-color: #1977cc;
+  color: white;
+  border: #2c4964;
+}
+.btn:hover {
+  background-color: #2c4964;
+}
+/* Header */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px;
+  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+  background-color: #fff;
+}
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+}
+#header .logo a {
+  color: #2c4964;
+  text-decoration: None;
+}
+
+/*Navigation Bar */
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.navbar ul li {
+  position: relative;
+  padding: 8px 0 8px 20px;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #2c4964;
+  white-space: nowrap;
+  transition: 0.3s;
+  border-bottom: 2px solid #fff;
+  padding: 5px 2px;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar li:hover a {
+  color: #1977cc;
+  border-color: #1977cc;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 10px;
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  text-decoration: none;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #082744;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar .dropdown:hover ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover a {
+  color: #1977cc;
+}
+
+.navbar form {
+  margin: 0;
+  padding: 10px;
+}
+
+.signup-btn {
+  margin-left: 25px;
+  background: #1977cc;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+}
+.signup-btn:hover {
+  background: #166ab5;
+  color: #fff;
+}
+/*Reminders */
+#reminders {
+  background: #fff;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+.section-title h2 {
+  margin-top: 10%;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2c4964;
+}
+.reminders .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.reminders .member .member-info {
+  padding-left: 30px;
+}
+.reminders .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #2c4964;
+}
+
+.chart {
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #f1f7fd;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #1977cc;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #1c84e3;
+  color: #fff;
+  text-decoration: none;
+}

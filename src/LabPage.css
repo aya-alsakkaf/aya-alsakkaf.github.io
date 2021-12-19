@@ -1,0 +1,146 @@
+
+/* Style of the Logo*/
+
+.Logo{
+        width:210px;
+        height:60px;
+    }
+
+
+
+
+
+/* Body Style */
+
+    body {
+        font-family: Arial;
+        padding: 10px;
+        
+  
+    }
+/* header style*/
+
+    header{
+        background-color: white;
+    }
+
+/* Style the top navigation bar */
+
+    .navbar {
+        overflow: hidden;
+        /*background-color:cadetblue;*/
+        scale: right;
+        border-style: groove;
+    }
+  
+
+/* Style the topnav links */
+
+    .navbar a {
+
+        float:right;
+        display: block;
+        color:darkblue;
+        text-align: left;
+        padding: 14px 16px;
+        position: absolute;        
+        right: 1px;
+
+        text-decoration: none;
+    }
+  
+/* Change color on hover */
+    .navbar a:hover {
+        background-color:lightred;
+        color: black;
+    }
+
+
+
+/* Style of the Search  */
+
+    .navbar .search {
+        padding:5px 10px;
+        position: absolute;
+        
+        right: 1px;
+    }
+
+    .section--box {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5625rem;
+}
+
+p {
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+}
+
+.box-wrapper {
+    display: flex;
+}
+
+.box-wrapper .box-item {
+    background: #fff;
+    padding: 11px 13px 0 13px;
+    box-shadow: 0 0 15px 0 rgba(127, 127, 127, 0.2);
+}
+
+.box-wrapper .box-item a {
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    color: #272727;
+    font-weight: 600;
+}
+
+.box-wrapper .box-item a:hover {
+    transition: all, 0.4s,ease;
+    color: #c09;
+    text-decoration: underline;
+}
+
+.box-wrapper .box-item span {
+    display: block;
+    padding: 28px 0;
+    line-height: 1;
+}
+
+.box-wrapper .box-item a i {
+    color: #c09;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 240px;
+}
+
+.image-container {
+height: 240px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+.section--box .box-wrapper .box-item {
+    margin: 23px -7.5px;
+}
+.img-fluid {
+   min-height: 40px;
+    max-height: 20px;
+}
+}
+
+@media (min-width: 1200px) {
+.section--box .box-wrapper .third-col .box-item {
+    margin: 0 0 0 auto;
+}
+}
+
+    
+    
