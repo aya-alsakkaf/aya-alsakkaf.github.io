@@ -169,6 +169,103 @@ h6 {
   margin-top: 10px;
 }
 
+/* Start Box */
+.box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: max(300px, 70%);
+  min-height: 60%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 998;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 20px rgba(0, 0, 0, 0.103);
+}
+.active-box {
+  display: flex;
+}
+.close {
+  width: 30px;
+  height: 30px;
+  background-color: #166AB5;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close::before,
+.close::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: white;
+}
+
+.close::before {
+  transform: rotate(-45deg);
+  position: relative;
+  left: 25%;
+}
+
+.close::after {
+  position: relative;
+  transform: rotate(45deg);
+  left: -25%;
+}
+
+.box form{
+  padding: 20px 50px;
+  width: 100%;
+}
+
+.box form .form-one{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.box form .form-one div{
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.box form .form-one div input{
+  margin: 0 10px;
+}
+
+.box form .form-two , .box form .form-three , .box form .form-four ,.box form .form-five{
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  margin: 0 auto;
+  text-align:start;
+}
+
+.box form .form-two select, .box form .form-three select, .box form .form-four input,.box form .form-five textarea{
+  margin: 0 10px;
+  width: 500px;
+}
+box form .form-five textarea{
+  resize:vertical;
+}
+
+/* End Box */
+
 /* Footer */
 #footer {
   color: #444444;

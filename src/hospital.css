@@ -1,0 +1,56 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  #i {
+    margin-top: 120px;
+    padding: 20px 30px;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+  .card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+
+  }
+  
+  
+  .card-body {
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 20px 20px ;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  }
+  
+  
+  
+  #t{
+
+    margin-bottom: 120px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 15%;
+
+  }
+
+  
