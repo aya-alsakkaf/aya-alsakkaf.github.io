@@ -22,11 +22,32 @@
     font-family: "Raleway", sans-serif;
   }
 
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+ 
+  .twenty {
+    width: 20%;
+    
+  }
+
 #h{
 
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+#h2{
+
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    margin-left: 300px; 
+    margin-top: 100px;
+
 }
 
   
@@ -35,11 +56,22 @@
     align-items: center;
     margin-left: 100px;
 }
+.btn{
+
+    border: none;
+}
   
+
+.dropdown-menu {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+
 .card-body {
     justify-content: center;
     align-items: center;
-    padding: 40px 20px 20px 20px ;
+    padding: 20px 20px 20px 20px ;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
   

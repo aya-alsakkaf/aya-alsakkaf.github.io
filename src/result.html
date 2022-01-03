@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta charset="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Adding Result</title>
+        <title>Sending Result</title>
         <meta content="Recods, tests, doctors, health, EMR, Electronic medical records" name="keywords">
         <link href="../img/health.png" rel="icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
@@ -17,11 +17,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
-        <script src="../components/header.js" type="text/javascript" defer></script>
+        <script src="../components/header2.js" type="text/javascript" defer></script>
         <script src="../components/footer.js" type="text/javascript" defer></script>
         
         <link rel="stylesheet" href="../src/Payment.css">
-        <script src="../src/hospital.js"></script>
+        <script src="../src/result.js"></script>
     </head>
     
     
@@ -34,27 +34,32 @@
                 <div class="box-wrapper" >
                     <div class="col-lg-9 slick-current slick-active" >
                         <div class="box-item" style="margin-bottom: 70px;" >
+                            <form class="row g-3 needs-validation" novalidate>
                             <br>
                             <div class="row" id="m" >
                                 <div class="col-md-8 ">
                                     <div class="card p-4" style="margin-top: 100px;">
-                                        <h6 id ="h" class="text-uppercase" style="margin-top: 30px;">Result File</h6>
+                                        <h6 id ="h"  style="margin-top: 30px;">Enter Civil ID</h6>
                                         <div class="col-md-12" >
                                             <div class="inputbox mt-3 mr-2"> 
-                                                <input type="text" name="name" class="form-control" required="required"> 
-                                                <span >Civil ID</span> 
+                                                <input type="text" name="name" class="form-control" id="validationCustom01" required> 
+                                
+                                               
                                             </div>
                                         </div>
                                         <div class="mb-3" style="margin-top: 30px;">
                                             <label id = "h" for="formFileMultiple" class="form-label" style="margin-bottom: 25px;">Add Result</label>
-                                            <input class="form-control" type="file" id="formFileMultiple" style= " font-weight: lighter;" multiple>
+                                            <input class="form-control" type="file" id="formFileMultiple" style= " font-weight: lighter; color: black; background-color: rgba(236, 234, 234, 0.815);" multiple>
                                         </div>
-                                        
 
-                                        <div class="mt-2 mb-2" style="text-align: right; "> 
+                                        
+                                    
+
+                                        <div class="mt-4 mb-4" style="text-align: right; "> 
                                             <button class="btn btn-primary px-4" type="submit" >Submit</button>
                                          </div>
                                     </div>
+                                </form>
                                 </div>
                             </div>
                         </div><!-- .box-item-->

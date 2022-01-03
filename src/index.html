@@ -20,7 +20,7 @@
 
   <body>
     <header-component></header-component>
-    <section id="reminders" class="reminders">
+    <section id="reminders" class="reminders"">
       <div class=" conatiner">
       <div class="section-title">
         <p>
@@ -36,23 +36,23 @@
         </p>
 
         <!-- Start Box -->
-        <div class="box">
+        <div class="box none-box">
           <form action="get">
             <div class="close"></div>
             <div class="form-one">
               <div>
                 <label for="date">Date:</label>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date" required>
               </div>
               <div>
                 <label for="time">Time:</label>
-                <input type="time" name="time" id="time">
+                <input type="time" name="time" id="time" required>
               </div>
             </div>
             <div class="form-two">
               <label for="place">Place:</label>
-              <select name="Place" id="place">
-                <option value="Alseef Hospital"> Alseef Hospital</option>
+              <select name="Place" id="place" required>
+                <option value="Alseef Hospital">Alseef Hospital</option>
                 <option value="Dar alshifa">Dar alshifa</option>
                 <option value="Alsalam Hospital">Alsalam Hospital</option>
                 <option value="Hadi Clinic">Hadi Clinic</option>
@@ -70,7 +70,7 @@
             </div>
             <div class="form-four">
               <label for="doctor">Doctor:</label>
-              <input type="text" name="doctor" id="doctor">
+              <input type="text" name="doctor" id="doctor" required>
             </div>
             <div class="form-five">
               <label for="notes">Note to remember:</label>
@@ -127,6 +127,44 @@
           </h2>
           </p>
         </div>
+
+        <!-- Start box two -->
+        <div class="parent-box">
+          <div class="box-two none-box">
+            <div class="close"></div>
+            <form action="get">
+              <div class="form-page-one">
+                <h3>Upload Data</h3>
+                <div class="category-box">
+                  <label for="category">Category</label>
+                  <select name="category" id="category">
+                    <option value="Fasting Blood Sugar (FBS)">Fasting Blood Sugar (FBS)</option>
+                    <option value="random Blood Sugar (RBS)">Random Blood Sugar (RBS)</option>
+                  </select>
+                </div>
+                <div class="upload-box">
+                  <label for="upload">Upload text</label>
+                  <input type="file" name="upload" id="upload">
+                </div>
+                <input type="button" value="Continue">
+              </div>
+              <div class="form-page-two none-box">
+                <div>
+                  <h3>Upload Data</h3>
+                  <div class="category-box-two">
+                    <label for="category-text">FBS</label>
+                    <input type="text" name="category-text" id="category-text" value="4.3">
+                  </div>
+                  <div class="btn-handle">
+                    <input type="button" value="Goback">
+                    <input type="submit" value="Save">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End box two -->
 
         <div class="container">
           <form>
