@@ -1,358 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta charset="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Add Test</title>
-        <meta content="Recods, tests, doctors, health, EMR, Electronic medical records" name="keywords">
-        <link href="../img/health.png" rel="icon">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
-        <link href="../src/style.css" rel="stylesheet">
-        
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-          
-          
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
-        <script src="../components/header2.js" type="text/javascript" defer></script>
-        <script src="../components/footer.js" type="text/javascript" defer></script>
-        
-        <link rel="stylesheet" href="../src/Payment.css">
-        <script src="../src/Addtest.js"></script>
-    </head>
-    
-    
-    <body>
-        
-        <header-component></header-component>
-        <br><br><br>
-        <h6  id ="h2">Add Test</h6> 
 
-        <section class="section section--box " >
-            <div class="container">
-                <div class="box-wrapper" >
-                    <div class="col-lg-9 slick-current slick-active" >
-                        <div class="box-item" style="margin-bottom: 70px;" >
-                            <form name="listForm" method="post" >
+<head>
+    <meta charset="utf-8">
+    <meta charset="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Add Test</title>
+    <meta content="Recods, tests, doctors, health, EMR, Electronic medical records" name="keywords">
+    <link href="../img/health.png" rel="icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+    <link href="./style.css" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="../components/header2.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+
+    <link rel="stylesheet" href="../src/Payment.css">
+    <script src="./Addtest.js"></script>
+</head>
+
+
+<body>
+
+    <header-component></header-component>
+    <br><br><br>
+    <h6 id="h2">Add Test</h6>
+
+    <section class="section section--box ">
+        <div class="container">
+            <div class="box-wrapper">
+                <div class="col-lg-9 slick-current slick-active">
+                    <div class="box-item" style="margin-bottom: 70px;">
+                        <form name="listForm" method="post">
                             <br>
-                            <div class="row" id="m" >
+                            <div class="row" id="m">
                                 <div class="col-md-8 ">
                                     <div class="card p-4" style="margin-top: 100px;">
-                                            <table id="testTable" class="table table-hidden table-hover table-striped text-center" style=" background-color: white;">
-                                                
-                                                    <tr class="search-result  col" >
-                                                        <th class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Test Name</th>
-                                                        <th class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Price </th>
-                                                        
-                                                    </tr>
-                                                    
-                                    
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> CBC</td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                        
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> ESR </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 10 KD </td>
-                                                        
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Blood Film </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 20 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Kidney Profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 20 KD </td>
-                                                        
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Liver Profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 20 KD </td>
-                                                        
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Lipid Profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 25 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> CRP </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 7 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> RH</td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                            
-                                                    </tr>
-                            
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> C3, C4</td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 15 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Vitamin D</td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 12 KD </td>
-                                                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Vitamin b12 </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 12 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Iron Profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                        
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Bone Profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 30 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> TSH </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 10 KD </td>
-                                                           
-                                                    </tr>
-                            
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> T3, T4 </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 17 KD </td>
-                                                            
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> PSA </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> LH </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 8 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> fsh </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 10 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Prolactin </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 14 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Estridol </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 17 KD </td>
-                                                        
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Progestone </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                        
-                                                    </tr>
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Urine micro albumin </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 8 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Urine rotein </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 10 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Urine culture </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 12 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Stool R and culture </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 8 KD </td>
-                                                            
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Pregnancy test </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 10 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> HBA1C</td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 15 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> BTHCG </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 12 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Coagulation profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 20 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Troponine </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 8 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Cardiac profile </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 17 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> PTH </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Bloode Cuture </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 10 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Zinc </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> 5 KD </td>
-                                                        
-                            
-                                                    </tr>
-                            
-                            
-                                                    <tr class="search-result col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Growth Hormines </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;">20 KD</td>
-                            
-                                                        
-                            
-                                                    </tr>
-                                                      
-                            
-                                                    <tr class="search-result panel-body col">
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;"> Mast | Mast || </td>
-                                                        <td class=" col-md-4 col-xs-5 col-lg-5 text-center " style="padding: 10px;">15 KD</td>
-                            
-                                                        
-                            
-                                                    </tr>
-                            
-                                            </table>
+                                        <table id="testTable"
+                                            class="table table-hidden table-hover table-striped text-center"
+                                            style=" background-color: white;">
+
+                                            <tr class="search-result  col">
+                                                <th class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Test Name</th>
+                                                <th class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Price </th>
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> CBC</td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> ESR </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 10 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Blood Film </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 20 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Kidney Profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 20 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Liver Profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 20 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Lipid Profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 25 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> CRP </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 7 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> RH</td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> C3, C4</td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 15 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Vitamin D</td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 12 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Vitamin b12 </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 12 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Iron Profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Bone Profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 30 KD </td>
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> TSH </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 10 KD </td>
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> T3, T4 </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 17 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> PSA </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> LH </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 8 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> fsh </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 10 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Prolactin </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 14 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Estridol </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 17 KD </td>
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Progestone </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+                                            </tr>
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Urine micro albumin </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 8 KD </td>
+
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Urine rotein </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 10 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Urine culture </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 12 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Stool R and culture </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 8 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Pregnancy test </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 10 KD </td>
+
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> HBA1C</td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 15 KD </td>
+
+
+                                            </tr>
+
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> BTHCG </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 12 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Coagulation profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 20 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Troponine </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 8 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Cardiac profile </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 17 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> PTH </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Bloode Cuture </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 10 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Zinc </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> 5 KD </td>
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Growth Hormines </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;">20 KD</td>
+
+
+
+                                            </tr>
+
+
+                                            <tr class="search-result panel-body col">
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;"> Mast | Mast || </td>
+                                                <td class=" col-md-4 col-xs-5 col-lg-5 text-center "
+                                                    style="padding: 10px;">15 KD</td>
+
+
+
+                                            </tr>
+
+                                        </table>
 
 
 
 
-                                            <div class=" mt-4 mb-4" >
-                                                <h6 id="h" class="text-uppercase text-center" style="margin-top: 30px;" >Add Test</h6>
-        
-        
+                                        <div class=" mt-4 mb-4">
+                                            <h6 id="h" class="text-uppercase text-center" style="margin-top: 30px;">Add
+                                                Test</h6>
+
+
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div class="inputbox mt-3 mr-2"> 
-                                                        <input type="text" id="testname" class="form-control" > 
-                                                        <span>Test Name</span> 
+                                                    <div class="inputbox mt-3 mr-2">
+                                                        <input type="text" id="testname" class="form-control">
+                                                        <span>Test Name</span>
                                                     </div>
                                                 </div>
-        
-        
+
+
                                                 <div class="col-md-6">
-                                                    
-                                                    <div class="inputbox mt-3 mr-2"> 
-                                                        <input type="text" id="price" class="form-control"> 
-                                                        <span>Price</span> 
-                                                    </div>  
-                                                    
+
+                                                    <div class="inputbox mt-3 mr-2">
+                                                        <input type="text" id="price" class="form-control">
+                                                        <span>Price</span>
+                                                    </div>
+
                                                 </div>
-                                                <div class="mt-2 mb-2" style="text-align: right;"> 
-                                                    <button type="button" id="updateButton"  class="btn btn-primary" onclick="TableUpdate();">Add</button>
-                                                 </div>
+                                                <div class="mt-2 mb-2" style="text-align: right;">
+                                                    <button type="button" id="updateButton" class="btn btn-primary"
+                                                        onclick="TableUpdate();">Add</button>
+                                                </div>
                                             </div>
-                                            
-
-
-                                            
 
 
 
@@ -360,25 +436,26 @@
 
 
 
-                                        </form>
-                                </div>
-                            </div>
-                        </div><!-- .box-item-->
+
+
+
+
+                        </form>
                     </div>
                 </div>
-            </div>
-    
-        </section>
+            </div><!-- .box-item-->
+        </div>
+        </div>
+        </div>
 
-        <footer-component></footer-component>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    </section>
+
+    <footer-component></footer-component>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    
-    </body>
+
+</body>
+
 </html>
-
-
-
-
