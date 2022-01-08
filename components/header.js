@@ -30,7 +30,6 @@ class Header extends HTMLElement {
                   </li>
                   <li><a class="nav-link" href="../src/booktest.html">Book a Test</a></li>
                   <li><a class="nav-link" href="../src/profile.html">Profile</a></li>
-                  <li><a class="nav-link" href="#">Contact</a></li>
               </ul>
           </nav>
           <a href="../src/log-in.html" class="signup-btn order-last"><span class="d-none d-md-inline">Sign In/Up</span></a>
