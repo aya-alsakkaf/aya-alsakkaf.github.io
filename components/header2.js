@@ -20,7 +20,7 @@ class Header extends HTMLElement {
             <!--Navigation bar-->
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link active" href="../src/result.html">Send result</a></li>
+                    <li><a class="nav-link active" href="../src/result.html">Send Result</a></li>
                      
                     <li><a class="nav-link" href="../src/Addtest.html">Add a Test</a></li>
                     <li><a class="nav-link" href="../src/orders.html">Orders</a></li>
