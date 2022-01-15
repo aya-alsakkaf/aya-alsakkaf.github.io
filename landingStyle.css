@@ -420,10 +420,13 @@ body {
 section {
     padding: 80px 0;
     overflow: hidden;
+    
   }
   
   .section-bg {
     background-color: #f8fbfe;
+    
+    
   }
   
   .section-title {
@@ -437,6 +440,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 0;
     color: #124265;
+    
   }
   .section-title p {
     margin-bottom: 0;
@@ -465,6 +469,7 @@ section {
     position: relative;
   }
   .services .icon-box .icon i {
+    
     font-size: 36px;
     transition: 0.5s;
     position: relative;
