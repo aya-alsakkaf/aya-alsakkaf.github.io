@@ -25,7 +25,7 @@ class Header extends HTMLElement {
                           </svg></a>
                       <ul>
                           <li><a href="../src/files.html" class="nav-link">Notes</a></li>
-                          <li><a href="#" class="nav-link">Lab Tests</a></li>
+                          <li><a href="../src/labtests.html" class="nav-link">Lab Tests</a></li>
                       </ul>
                   </li>
                   <li><a class="nav-link" href="../src/booktest.html">Book a Test</a></li>
