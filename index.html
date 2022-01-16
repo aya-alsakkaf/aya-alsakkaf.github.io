@@ -1,205 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta charset="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Home | HealthAssist</title>
-    <meta content="Recods, tests, doctors, health, EMR, Electronic medical records" name="keywords">
-    <link href="./img/health.png" rel="icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>HealthAssist</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="/img/health.png" rel="icon">
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/style.css">
-    <script src="./components/header.js" type="text/javascript" defer></script>
-    <script src="./components/footer.js" type="text/javascript" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
-  <body>
-    <header-component></header-component>
-    <section id="reminders" class="reminders"">
-      <div class=" conatiner">
-      <div class="section-title">
-        <p>
-        <h2>Reminders
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg>
-          </a>
-        </h2>
-        </p>
 
-        <!-- Start Box -->
-        <div class="box none-box">
-          <form action="get">
-            <div class="close"></div>
-            <div class="form-one">
-              <div>
-                <label for="date">Date:</label>
-                <input type="date" name="date" id="date" required>
-              </div>
-              <div>
-                <label for="time">Time:</label>
-                <input type="time" name="time" id="time" required>
-              </div>
-            </div>
-            <div class="form-two">
-              <label for="place">Place:</label>
-              <select name="Place" id="place" required>
-                <option value="Alseef Hospital">Alseef Hospital</option>
-                <option value="Dar alshifa">Dar alshifa</option>
-                <option value="Alsalam Hospital">Alsalam Hospital</option>
-                <option value="Hadi Clinic">Hadi Clinic</option>
-                <option value="Kuwait Hospital">Kuwait Hospital</option>
-              </select>
-            </div>
-            <div class="form-three">
-              <label for="purpose">Purpose:</label>
-              <select name="purpose" id="purpose">
-                <option value="Doctor consultation">Doctor consultation</option>
-                <option value="Therapy">Therapy</option>
-                <option value="Test appointment">Test appointment</option>
-                <option value="Clinic visitation">Clinic visitation</option>
-              </select>
-            </div>
-            <div class="form-four">
-              <label for="doctor">Doctor:</label>
-              <input type="text" name="doctor" id="doctor" required>
-            </div>
-            <div class="form-five">
-              <label for="notes">Note to remember:</label>
-              <textarea name="notes" id="notes" cols="20" rows="2"></textarea>
-            </div>
-            <input type="submit" value="Save">
-            <input type="reset" value="Clear">
-          </form>
-        </div>
-        <!-- End Box -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-        <p>Keep up with your appointments:</p>
-      </div>
+    <link href="./landingStyle.css" rel="stylesheet">
 
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="member d-flex align-items-start">
-            <div class="member-info">
-              <h4>Up-Coming Appointment </h4>
-              <span>Date: Monday 12/12/2021 , 2:00PM </span>
-              <p>Dr. Mohammed AlMukaimi, <a href="https://goo.gl/maps/Z4J1sKiGEPWEPjyN6">Mouwasat
-                  Hospital</a>
-              </p>
-            </div>
-          </div>
-        </div>
+</head>
 
-        <div class="col-lg-6 mt-4 mt-lg-0">
-          <div class="member d-flex align-items-start">
-            <div class="member-info">
-              <h4>Up-Coming Appointment</h4>
-              <span>Date: 31/12/2021 , 4:30PM </span>
-              <p><a href="https://goo.gl/maps/4jnxz22xUuk2KadV8">Sultan Faisal Center for Radiology</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
+<body>
 
-    <section class="tests">
-      <div class="conatiner">
-        <div class="section-title">
-          <p>
-          <h2>Frequent Tests
-            <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-              </svg>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/health.png" alt="logo" width="50" height="50">
             </a>
-          </h2>
-          </p>
-        </div>
+            <h1 class="logo me-auto"><a href="../index.html">HealthAssist</a></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto  " href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto " href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="getstarted  scrollto" href="index.html">Create an account</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
 
-        <!-- Start box two -->
-        <div class="parent-box">
-          <div class="box-two none-box">
-            <div class="close"></div>
-            <form action="get">
-              <div class="form-page-one">
-                <h3>Upload Data</h3>
-                <div class="category-box">
-                  <label for="category">Category</label>
-                  <select name="category" id="category">
-                    <option value="Fasting Blood Sugar (FBS)">Fasting Blood Sugar (FBS)</option>
-                    <option value="random Blood Sugar (RBS)">Random Blood Sugar (RBS)</option>
-                  </select>
+        </div>
+    </header><!-- End Header -->
+
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1>HealthAssist</h1>
+                    <h2>Your medical records in your pocket!</h2>
                 </div>
-                <div class="upload-box">
-                  <label for="upload">Upload text</label>
-                  <input type="file" name="upload" id="upload">
+            </div>
+            <div class="text-center">
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            </div>
+
+            <div class="row icon-boxes">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers" viewBox="0 0 16 16">
+                            <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+                          </svg></i></div>
+                        <h4 class="title"><a href="">All your medical records in one place</a></h4>
+                        <p class="description">One platform to contain all your medical records</p>
+                    </div>
                 </div>
-                <input type="button" value="Continue">
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                            <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                          </svg></i></div>
+                        <h4 class="title"><a href="">Recieve your lab tests</a></h4>
+                        <p class="description">Lab tests, doctors notes, and much more</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                          </svg></i></div>
+                        <h4 class="title"><a href="">Book your lab tests</a></h4>
+                        <p class="description">We provide various clinics and you can book with them through us!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                            <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                          </svg></i></div>
+                        <h4 class="title"><a href="">Share your files with your doctor</a></h4>
+                        <p class="description">Your doctor can access your files with one simple click of a button</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            HealthAssist aims to tackle healthcare problems by providing a platform to store and
+                            share health records between patients and healthcare service providers.
+
+                        </p>
+                       
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            HealthAssist focuses on giving power to the patient 
+                            when it comes to their medical and health information by keeping their medical records stored, 
+                            shared and easily accessed with the click of a button. 
+                        </p>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+
+
+
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Services</h2>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="icon-box iconbox-blue">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg>
+                                <i class="bx bxl-dribbble"></i>
+                            </div>
+                            <br>
+                            <h4>Set up a reminder of an upcoming appointment</h4>
+                    
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" >
+                        <div class="icon-box iconbox-orange ">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                  </svg>
+                                <i class="bx bx-file"></i>
+                            </div>
+                            <br>
+                            <h4> Recieve notifications through SMS or email! </h4>
+                           
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" >
+                        <div class="icon-box iconbox-pink">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                                <i class="bx bx-tachometer"></i>
+                            </div>
+                            <br>
+                            <h4>Search on the files available based on keywords</h4>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" >
+                        <div class="icon-box iconbox-yellow">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                                  </svg>
+                                <i class="bx bx-layer"></i>
+                            </div>
+                            <br>
+                            <h4>Keep up with your frequent tests</h4>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                        <div class="icon-box iconbox-red">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-file-medical" viewBox="0 0 16 16">
+                                    <path d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                                  </svg>
+                                </svg>
+                                <i class="bx bx-slideshow"></i>
+                            </div>
+                            <br>
+                            <h4> Book your laborory tests through us! </h4>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                        <div class="icon-box iconbox-teal">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                  </svg>
+                                <i class="bx bx-arch"></i>
+                            </div>
+                            <br>
+                            <h4>Share your files with your doctors</h4>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+
+            </div>
+        </section><!-- End Sevices Section -->
+
+
+        <section id="team" class="team section-bg">
+            <div class="container">
+      
+              <div class="section-title">
+                <h2>Team</h2>
+                <p>Meet the team behind HealthAssist</p>
               </div>
-              <div class="form-page-two none-box">
-                <div>
-                  <h3>Upload Data</h3>
-                  <div class="category-box-two">
-                    <label for="category-text">FBS</label>
-                    <input type="text" name="category-text" id="category-text" value="4.3">
-                  </div>
-                  <div class="btn-handle">
-                    <input type="button" value="Goback">
-                    <input type="submit" value="Save">
+      <center>
+              <div class="row">
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" >
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="img/profileTeam.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                      <h4>Aya Al-Sakkaf</h4>
+                      <span>Team Leader</span>
+                    </div>
                   </div>
                 </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" >
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="img/profileTeam.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                      <h4>Asraa AlAnzi</h4>
+                      <span>Developer</span>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" >
+                  <div class="member">
+                    <div class="member-img">
+                      <img src="img/profileTeam.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                      <h4>Shareefa Al-Othman</h4>
+                      <span>Developer</span>
+                    </div>
+                  </div>
+                </div>
+      
               </div>
-            </form>
-          </div>
-        </div>
-        <!-- End box two -->
+      
+            </div>
+          </section><!-- End Team Section -->
 
-        <div class="container">
-          <form>
-            <h3>Enter your Test Results</h3>
-            <div class="mb-3">
-              <label for="testType" class="form-label">Test: </label>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Select</option>
-                <option value="1">Glucose</option>
-                <option value="2">Blood Pressure</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="result" class="form-label">Result</label>
-              <input type="text" id="result" class="form-control" placeholder="Result" required>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
-        </div>
-        <div class="container" style="width: 50%;">
-          <div>
-            <canvas id="myChart" width="400" height="400"></canvas>
-            <script src="./src/glucoseChart.js"></script>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <footer-component></footer-component>
-    <script src="./src/app.js"></script>
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>We do love to hear your feed back! If you have any concers, feedback or opinions. Please fill the following <a href="https://www.surveymonkey.com/r/TZBDLBR"> survey. </a></p>
+                    <p>We'd love to hear from you!!</p>
+                </div>
+
+                <div class="row mt-5">
+<center>
+
+
+                    <div class="col-lg-10 mt-5 mt-lg-0 ">
+                        <form action="#" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group mt-3">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <div class="my-3">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </center>
+            </div>
+        </section><!-- End Contact Section -->
+
+
+    </main>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>OnePage</h3>
+                        <p>
+                            A108 Adam Street <br>
+                            New York, NY 535022<br>
+                            United States <br><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-  </body>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
 
 </html>
